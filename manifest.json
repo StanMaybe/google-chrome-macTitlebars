@@ -1,0 +1,16 @@
+{"manifest_version": 3,
+  "name": "macOS Titlebars",
+  "version": "1.0.0",
+  "description": "Adds macOS-style titlebars to Google Chrome",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "macOS Titlebars"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
